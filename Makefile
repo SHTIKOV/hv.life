@@ -1,11 +1,11 @@
 up:
-	docker-compose up -d
+	sudo docker-compose up -d
 
 down:
-	docker-compose down --remove-orphans
+	sudo docker-compose down --remove-orphans
 
 stop:
-	docker-compose stop
+	sudo docker-compose stop
 
 down-clear:
-	docker-compose down -v --remove-orphans
+	sudo docker-compose down -v --remove-orphans
