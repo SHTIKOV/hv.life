@@ -10,3 +10,24 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+import 'vuetify/dist/vuetify.min.css';
+import 'vuetify/lib/index.js';
+import '@mdi/js'
+
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+
+import Routes from './js/routes.js';
+
+import App from './js/views/App';
+
+Vue.use(Vuetify);
+
+const app = new Vue({
+    vuetify : new Vuetify(),
+    el: '#app',
+    router: Routes,
+    render: h => h(App),
+});
+
+export default app;
